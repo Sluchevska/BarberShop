@@ -375,9 +375,10 @@ ul {
 }
 
 /*Our services and prices*/
+
 .service-container {
   padding-top: 130px;
-  padding-left: 55px;
+  /* padding-left: 55px; */
   padding-bottom: 130px;
   background-image: url(../image/price-img.jpg);
   background-color: #111319;
@@ -426,7 +427,7 @@ ul {
 }
 
 .prices {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   padding: 30px 40px;
 
   font-weight: 400;
@@ -450,6 +451,52 @@ ul {
     #090b13 0%,
     rgba(9, 11, 19, 0.2) 100%
   );
+}
+
+.mencut-price::before,
+.beard-price::before,
+.mustache-price::before,
+.dangeros-price::before,
+.junior-price::before,
+.machine-price::before,
+.kids-price::before,
+.coloring-price::before {
+  content: "";
+
+  display: inline-block;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+}
+
+.dangeros-price::before {
+  width: 165px;
+}
+
+.mencut-price::before {
+  width: 235px;
+}
+
+.mustache-price::before {
+  width: 271px;
+}
+
+.beard-price::before {
+  width: 242px;
+}
+
+.junior-price::before {
+  width: 234px;
+}
+
+.machine-price::before {
+  width: 202px;
+}
+
+.kids-price::before {
+  width: 143px;
+}
+
+.coloring-price::before {
+  width: 163px;
 }
 
 /*Why WE*/
@@ -706,12 +753,8 @@ form {
   font-style: normal;
 }
 
-#contacts {
-  padding-left: 100px;
-}
-
-#onlinesign,
-#contacts {
+.onlinesign,
+.foot-back {
   width: 50%;
   display: flex;
   flex-flow: column;
@@ -741,6 +784,7 @@ form {
 
 .foot-back {
   background-image: url(../image/Bg.jpg);
+  padding-left: 100px;
 
   /* background-size: 625px 644px; */
 }
